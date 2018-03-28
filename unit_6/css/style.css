@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Permanent+Marker');
 
+* { margin:0; padding:0; box-sizing:border-box; }
+
 body {
 	background: #1D1E2C;
-	background: url("https://images.pexels.com/photos/296884/pexels-photo-296884.jpeg");
+	background: url(../images/pexels-photo-296884.jpeg);
 	background-size: cover;
 	font-family: "Open Sans", sans-serif;
 	padding: 0 200px;
@@ -16,7 +18,6 @@ h1 {
 	letter-spacing: 12px;
 }
 p {
-	color: #fff;
 	font-size: 22px;
 	line-height: 1.5em;
 }
@@ -27,7 +28,6 @@ ul {
 	list-style-type: square;
 }
 ul li {
-	color: #d7cdcc;
 	text-transform: uppercase;
 	font-size: 22px;
 }
@@ -42,14 +42,14 @@ a:hover {
 	color: #9c528b;
 }
 header {
-	background: rgba(89, 101, 111,.4);
-    border: 1px black solid;
     padding: 20px;
     margin-bottom: 20px;
 }
+header p {
+	color: #d7cdcc;
+}
 nav {
 	background: #1d1e2c;
-    border: 1px black solid;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -63,47 +63,40 @@ nav a:hover {
 	background: #fff;
 }
 section {
-    border: 1px black solid;
     padding: 20px;
     margin-bottom: 20px;
 }
-aside {
-    border: 1px black solid;
-    padding: 20px;
-}
-aside a {
+section a {
 	color: #fff;
 }
-aside a:hover {
+section a:hover {
 	color: #fff;
 }
-article {
-    border: 1px black solid;
-    padding: 20px;
-}
-article p,
-article ul,
-article li {
-	color: #1d1e2c;
-}
-#two_column {
+#content_wrapper {
 	background: #1d1e2c;
-    border: 1px black solid;
     padding: 20px;
+    margin-bottom: 20px;
 }
 #left {
 	background: #59656f;
-    border: 1px black solid;
-    padding: 20px;
+    padding: 1em;
     float: left;
-    width: 30%;
+    width: 33.33%;
+}
+#left p {
+	color: #fff;
+	font-weight: normal;
+	margin: 1em 0;
 }
 #right {
 	background: #d7cdcc;
-    border: 1px black solid;
-    padding: 20px;
+    padding: 2em;
     float: right;   
-    width: 62%;
+    width: 65.66%;
+    color: #1d1e2c;
+}
+#right ul {
+	margin-left: 2em;
 }
 #slogan {
 	font-style: italic;
@@ -113,7 +106,6 @@ article li {
 	font-weight: bold;
 }
 .wrapper {
-    border: 1px black solid;
     padding: 20px;
 }
 .clearfix:after {
@@ -126,14 +118,17 @@ article li {
 }
 footer {
 	background-color: #1d1e2c;
-    border: 1px black solid;
     padding: 20px;
 }
 footer p {
 	float: left;
+	color: #fff;
+}
+footer ul {
+	float: right;
 }
 footer ul li {
-	float: right;
-	display: inline;
+	float: left;
 	margin: 0 1em;
+	list-style-type: none;
 }
