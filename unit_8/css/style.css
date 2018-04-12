@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Permanent+Marker');
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+	background: #1D1E2C;
+	background: url(../images/pexels-photo-296884.jpeg);
+	background-size: cover;
+	font-family: "Open Sans", sans-serif;
+	padding: 0 20%;
+	font-size: 22px;
+}
+h1 {
+	color: #d7cdcc;
+	text-transform: uppercase;
+	font-family: "Permanent Marker", cursive;
+	font-size: 3em;
+	text-align:center;
+	letter-spacing: 12px;
+}
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+ul {
+	list-style-type: square;
+}
+ul li {
+	text-transform: uppercase;
+	font-size: 1em;
+}
+a {
+	color: #9c528b;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+a:hover {
+	text-decoration: none;
+	color: #9c528b;
+}
+header {
+    padding: 2%;
+    margin-bottom: 1%;
+}
+header p {
+	color: #d7cdcc;
+}
+nav {
+	background: #1d1e2c;
+    padding: 2%;
+    margin-bottom: 1%;
+}
+nav a {
+	display: inline;
+	font-size: 1em;
+	background: #1d1e2c;
+	padding: 2%;
+}
+nav a:hover {
+	background: #fff;
+}
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+section a {
+	color: #fff;
+}
+section a:hover {
+	color: #fff;
+}
+#content_wrapper {
+	background: #1d1e2c;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+#left {
+	background: #59656f;
+    padding: 1em;
+    float: left;
+    width: 33.33%;
+}
+#left p {
+	color: #fff;
+	font-weight: normal;
+	margin: 1em 0;
+}
+#right {
+	background: #d7cdcc;
+    padding: 2em;
+    float: right;   
+    width: 65.66%;
+    color: #1d1e2c;
+}
+#right ul {
+	margin-left: 2em;
+}
+#slogan {
+	font-style: italic;
+	text-align:center;
+}
+#contact {
+	font-weight: bold;
+}
+.wrapper {
+    padding: 2%;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+footer {
+	background-color: #1d1e2c;
+    padding: 2%;
+}
+footer p {
+	float: left;
+	color: #fff;
+}
+footer ul {
+	float: right;
+}
+footer ul li {
+	float: left;
+	margin: 0 1em;
+	list-style-type: none;
+}
+@media only screen and (max-width: 908px) {
+	nav a {
+		display: block;
+	}
+	#left,
+	#right {
+		clear: both;
+		width: 100%;
+	}
+	#left {
+		display: none;
+	}
+}
+@media only screen and (max-width: 530px) {
+	body {
+		font-size: 18px;
+	}
+}
