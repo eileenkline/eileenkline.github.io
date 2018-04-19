@@ -71,6 +71,9 @@ section a {
 section a:hover {
 	color: #fff;
 }
+.header-img img{
+	max-width: 100%;
+}
 #content_wrapper {
 	background: #1d1e2c;
     padding: 1%;
@@ -151,5 +154,8 @@ footer ul li {
 	footer ul li {
 		margin: .75em .5em;
 		width: 100%;
+	}
+	.header-img img {
+		display: none;
 	}
 }
